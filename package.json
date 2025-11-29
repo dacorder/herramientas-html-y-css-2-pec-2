@@ -1,8 +1,8 @@
 {
-  "name": "uoc-boilerplate",
+  "name": "cocina-pacense",
   "version": "3.12.0",
   "private": true,
-  "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
+  "description": "Este es el portal web de las jornadas de cocina tradicional de Badajoz.",
   "scripts": {
     "parcel:serve": "parcel -p 8123 --target web",
     "parcel:build": "parcel build --target web --no-source-maps --no-cache",
@@ -23,17 +23,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uoc-advanced-html-css/uoc-boilerplate.git"
+    "url": "https://github.com/dacorder/herramientas-html-y-css-2-pec-2"
   },
   "author": {
-    "name": "Jordi Tarrida",
-    "email": "jorditarrida@uoc.edu"
+    "name": "David Cordero Ramirez",
+    "email": "dacorder@uoc.edu"
   },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues"
   },
-  "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
+  "homepage": "https://cocinapacense.netlify.app/",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.15.3",
     "autoprefixer": "^10.4.20",
