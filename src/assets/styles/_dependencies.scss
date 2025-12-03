@@ -2,8 +2,10 @@
  * Import any npm dependencies in this file
  * see commented examples below
  */
+ 
+// Import custom variables first
+@import "variables";
 
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
+// Import 3rd party dependencies
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
 @import "bootstrap/scss/bootstrap";

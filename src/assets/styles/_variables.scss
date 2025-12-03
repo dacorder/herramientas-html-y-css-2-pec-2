@@ -1,12 +1,37 @@
 @use "sass:color";
 
+// Fonts
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
   "Segoe UI Symbol";
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 
-$mqMinWidth: 420px;
+// Cocina Pacense Color Palatte
+$color-background: #c8c8c8;
+$color-background-contrast: #3f3f3f;
+
+$color-primary: #0372bc;
+$color-secondary: #000000;
+
+$color-primary-contrast: #ffffff;
+
+
+
+
+
+
+// Bootstrap theme colors
+$theme-colors: (
+ "primary": $color-primary,
+ "secondary": $color-secondary,
+ "success": #28a745,
+ "info": #17a2b8,
+);
+
+// Bootstrap Navbar colors
+$navbar-dark-color: $color-primary-contrast;
+$navbar-dark-hover-color: white;
+$navbar-dark-active-color: white;
+$navbar-dark-brand-color: $color-primary-contrast;
+$navbar-dark-brand-hover-color: white;
