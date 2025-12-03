@@ -8,25 +8,31 @@ $font-family-serif: "Georgia", "Times New Roman", serif;
 
 
 // Cocina Pacense Color Palatte
-$color-background: #c8c8c8;
-$color-background-contrast: #3f3f3f;
+$color-background: #FFFAFF;
+$color-background-contrast: #050401;
 
-$color-primary: #0372bc;
-$color-secondary: #000000;
+$color-primary: #303036;
+$color-primary-contrast: #f0f0f0;
 
-$color-primary-contrast: #ffffff;
+$color-secondary: #30BCED;
+$color-secondary-contrast: #ffffff;
 
-
-
+$color-success: #28a745;
+$color-danger: #FC5130;
+$color-warning: #FFC107;
+$color-info: #17a2b8;
 
 
 
 // Bootstrap theme colors
 $theme-colors: (
- "primary": $color-primary,
- "secondary": $color-secondary,
- "success": #28a745,
- "info": #17a2b8,
+  "primary": $color-primary,
+  "secondary": $color-secondary,
+  "success": $color-success,
+  "danger": $color-danger,
+  "warning": $color-warning,
+  "info": $color-info,
+  "dark": $color-primary,
 );
 
 // Bootstrap Navbar colors
