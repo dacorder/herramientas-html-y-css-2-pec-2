@@ -1,9 +1,19 @@
+a:has(.card-speaker) {
+    text-decoration: none;
+    color: inherit;
+}
+
 .card-speaker {
     border: 1px solid #ccc;
     padding: 16px;
     text-align: center;
     margin: 16px auto;
     width: 100cqw;
+
+    &:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        border-color: #999;
+    }
 }
 
 @container speaker-list-container (width > 768px) {
