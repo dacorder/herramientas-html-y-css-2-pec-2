@@ -1,4 +1,5 @@
 @use "../variables";
+@use "../mixins";
 
 * {
   box-sizing: border-box;
@@ -18,12 +19,16 @@ body {
 }
 
 .main-container {
-  max-width: 800px;
-  margin: auto;
+  width: 100%;
+  margin: 0 auto;
+  flex: 1;
   padding: 2rem;
-  border-radius: 2rem;
   text-align: center;
-  background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background-color: red;
+}
+
+@include mixins.respond-desktop {
+  .main-container {
+    max-width: 1200px;
+  }
 }
