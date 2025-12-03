@@ -1,0 +1,18 @@
+@use "../variables";
+
+.media-post {
+    border: 1px solid #ccc;
+    padding: 16px;
+    text-align: start;
+}
+
+.media-post__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.media-post__image {
+    width: 30%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
