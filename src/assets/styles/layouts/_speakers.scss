@@ -1,0 +1,31 @@
+.speaker-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    container-type: inline-size;
+}
+
+.card-speaker {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    margin: 16px auto;
+    width: calc(33cqw - 16px);
+}
+
+.card-speaker__image {
+    width: 100%;
+    height: auto;
+}
+
+.card-speaker__name {
+    font-size: 1.5em;
+    margin: 12px 0 8px 0;
+}
+
+.card-speaker__description {
+    font-size: 1em;
+    color: #666;
+}
