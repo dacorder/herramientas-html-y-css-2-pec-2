@@ -12,7 +12,19 @@
     padding: 16px;
     text-align: center;
     margin: 16px auto;
-    width: calc(33cqw - 16px);
+    width: 100cqw;
+}
+
+@container (width > 768px) {
+    .card-speaker {
+        width: calc(50cqw - 24px);
+    }
+}
+
+@container (width > 1024px) {
+    .card-speaker {
+        width: calc(33.33cqw - 16px);
+    }
 }
 
 .card-speaker__image {
