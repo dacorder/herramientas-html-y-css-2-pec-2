@@ -8,7 +8,10 @@
     <title>UOC Boilerplate</title>
   </head>
   <body>
-    <include src="./views/header.html"></include>
+    <include src="./views/header.html" locals='{
+      "page": "media"
+    }'></include>
+    
     <main class="main-container">
       <h1>Nota de Prensa</h1>
       <p>

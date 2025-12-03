@@ -8,9 +8,12 @@
     <title>UOC Boilerplate</title>
   </head>
   <body>
-    <include src="./views/header.html"></include>
+    <include src="./views/header.html" locals='{
+      "page": "home"
+    }'></include>
+
     <main class="main-container">
-      <h1>Contacto</h1>
+      <h1>Home</h1>
       <p>
         Esta es la página de inicio.
       </p>
