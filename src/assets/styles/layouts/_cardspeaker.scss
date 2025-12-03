@@ -1,0 +1,35 @@
+.card-speaker {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    margin: 16px auto;
+    width: 100cqw;
+}
+
+@container speaker-list-container (width > 768px) {
+    .card-speaker {
+        width: calc(50cqw - 24px);
+    }
+}
+
+@container speaker-list-container (width > 1024px) {
+    .card-speaker {
+        width: calc(33.33cqw - 16px);
+    }
+}
+
+.card-speaker__image {
+    width: 100%;
+    height: auto;
+}
+
+.card-speaker__name {
+    font-size: 1.5em;
+    margin: 12px 0 8px 0;
+}
+
+.card-speaker__description {
+    font-size: 1em;
+    color: #666;
+}
