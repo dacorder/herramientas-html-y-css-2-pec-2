@@ -4,6 +4,7 @@
     justify-content: center;
     gap: 24px;
     container-type: inline-size;
+    container-name: speaker-list-container;
 }
 
 .card-speaker {
@@ -15,13 +16,13 @@
     width: 100cqw;
 }
 
-@container (width > 768px) {
+@container speaker-list-container (width > 768px) {
     .card-speaker {
         width: calc(50cqw - 24px);
     }
 }
 
-@container (width > 1024px) {
+@container speaker-list-container (width > 1024px) {
     .card-speaker {
         width: calc(33.33cqw - 16px);
     }
