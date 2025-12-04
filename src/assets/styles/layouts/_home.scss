@@ -1,39 +1,45 @@
 @use "../variables";
 @use "../mixins";
 
-* {
-  box-sizing: border-box;
-}
+@layer reset, defaults;
 
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  padding: 0rem;
-  font-family: variables.$font-family-sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  background-color: variables.$color-background;
-  color: variables.$color-background-contrast;
-}
-
-.main-container {
-  width: 100%;
-  padding: 0.5rem;
-  margin: 0 auto;
-  flex: 1;
-  text-align: center;
-
-  & h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+@layer reset {
+  * {
+    box-sizing: border-box;
   }
 }
 
-@include mixins.respond-desktop {
+@layer defaults {
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0rem;
+    font-family: variables.$font-family-sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: variables.$color-background;
+    color: variables.$color-background-contrast;
+  }
+
   .main-container {
-    max-width: 1200px;
-    padding: 2rem;
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0 auto;
+    flex: 1;
+    text-align: center;
+
+    & h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @include mixins.respond-desktop {
+    .main-container {
+      max-width: 1200px;
+      padding: 2rem;
+    }
   }
 }
