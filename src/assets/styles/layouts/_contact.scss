@@ -1,3 +1,6 @@
+@use "../variables";
+@use "../mixins";
+
 form[name="contact"] {
   max-width: 550px;
   margin: 30 auto;
@@ -12,4 +15,10 @@ form[name="contact"] {
   .btn-primary {
     padding: 0.6rem 1.5rem;
   }
+}
+
+.contact__icon {
+  color: variables.$color-acent-p3;
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
