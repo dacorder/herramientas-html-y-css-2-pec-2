@@ -139,11 +139,7 @@
       padding: 2rem 0;
   }
 
-  .media-post__content {
-    flex-direction: row;
-  }
-
-  .media-post__location {
+  :is(.media-post__content, .media-post__location) {
     flex-direction: row;
   }
 }
