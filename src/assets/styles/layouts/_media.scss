@@ -32,7 +32,7 @@
       padding: 2rem 1.5rem;
       color: white;
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+      background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
     }
 
     &__title {
@@ -75,6 +75,10 @@
       gap: 1rem;
     }
 
+    &__section {
+      margin-bottom: 2.5rem;
+    }
+
     &__lead {
       font-size: 1.25rem;
       font-weight: 500;
@@ -83,15 +87,6 @@
       margin: 0;
       text-align: start;
       padding: 15px 0 0 0;
-    }
-
-    &__section {
-      margin-bottom: 2.5rem;
-
-      p {
-        font-size: 1rem;
-        line-height: 1.8;
-      }
     }
 
     &__intro {
