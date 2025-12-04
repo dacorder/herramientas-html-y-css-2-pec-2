@@ -1,7 +1,7 @@
 @use "../variables";
 @use "../mixins";
 
-@layer media {
+@layer layout {
   .media-container {
     padding: 0;
     max-width: 100%;
@@ -115,31 +115,31 @@
       }
     }
   }
-}
 
-@include mixins.respond-desktop {
+  @include mixins.respond-desktop {
 
-  .media-post__hero {
-    aspect-ratio: 9/3;
-  }
+    .media-post__hero {
+      aspect-ratio: 9/3;
+    }
 
-  .media-post__title {
-    font-size: 3.2rem;
-  };
+    .media-post__title {
+      font-size: 3.2rem;
+    };
 
-  .media-post__author {
-    font-size: 1.2rem;
-  }
+    .media-post__author {
+      font-size: 1.2rem;
+    }
 
-  .media-post__image {
-    max-width: 400px;
-  }
+    .media-post__image {
+      max-width: 400px;
+    }
 
-  .media-post__intro {
-      padding: 2rem 0;
-  }
+    .media-post__intro {
+        padding: 2rem 0;
+    }
 
-  :is(.media-post__content, .media-post__location) {
-    flex-direction: row;
+    :is(.media-post__content, .media-post__location) {
+      flex-direction: row;
+    }
   }
 }
