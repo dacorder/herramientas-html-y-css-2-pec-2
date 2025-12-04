@@ -1,16 +1,17 @@
-.speaker-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 24px;
-    container-type: inline-size;
-    container-name: speaker-list-container;
-}
 
-.speakers-footer {
-    text-align: center;
-    padding: 16px;
-    margin-top: 32px;
-    font-size: 1em;
-    color: #333;
+@layer layout {
+    .speaker-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+        container-type: inline-size;
+        container-name: speaker-list-container;
+    }
+
+    footer .speakers-footer {
+        text-align: center;
+        font-size: 1em;
+        color: #333;
+    }
 }

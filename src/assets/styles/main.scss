@@ -13,6 +13,8 @@
  * It's a best practice to use a different partial for each page
  */
 
+@use "layouts/reset";
+@use "layouts/defaults";
 @use "layouts/home";
 @use "layouts/header";
 @use "layouts/speakers";
@@ -20,6 +22,7 @@
 @use "layouts/media";
 @use "layouts/contact";
 
-/**
- * Do NOT include anything else in this file!
+ /**
+ * Define layers cascade
  */
+@layer reset, defaults, layout;
