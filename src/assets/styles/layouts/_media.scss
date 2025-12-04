@@ -99,6 +99,22 @@
       padding: 0;
     }
   }
+
+  footer:has(a[href^="mailto:"]) {
+    margin: 0 0;
+    padding: 10px 15px;
+
+    a {
+      color: variables.$color-info;
+      text-decoration: dotted underline;
+    }
+
+    p {
+      &::before {
+        content: "✉ ";
+      }
+    }
+  }
 }
 
 @include mixins.respond-desktop {
