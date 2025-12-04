@@ -44,21 +44,6 @@ form[name="contact"] {
     font-weight: 500;
   }
 
-  &__options {
-    display: flex;
-    justify-content: center;
-    gap: 0.75rem;
-
-    input[type="radio"] {
-      display: none;
-
-      &:checked + .color-picker__color {
-        transform: scale(1.1);
-        box-shadow: 0 0 0 3px variables.$color-primary;
-      }
-    }
-  }
-
   &__color {
     width: 36px;
     height: 36px;
@@ -89,6 +74,21 @@ form[name="contact"] {
 
     &--purple {
       background-color: color(display-p3 0.56 0.14 0.67);
+    }
+  }
+
+  &__options {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+
+    input[type="radio"] {
+      display: none;
+
+      &:checked + .color-picker__color {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 3px variables.$color-primary;
+      }
     }
   }
 }
