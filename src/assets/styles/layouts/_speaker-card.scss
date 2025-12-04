@@ -1,6 +1,7 @@
 a:has(.card-speaker) {
     text-decoration: none;
     color: inherit;
+    display: flex;
 }
 
 .card-speaker {
@@ -9,6 +10,7 @@ a:has(.card-speaker) {
     text-align: center;
     margin: 16px auto;
     width: 100cqw;
+    height: 100%;
 
     &:hover {
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
