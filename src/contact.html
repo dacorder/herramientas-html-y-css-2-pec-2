@@ -18,7 +18,7 @@
       <form name="contact" method="POST" netlify>
 
         <i class="contact__icon fa-solid fa-envelope"></i>
-        <p class="mb-3">
+        <p class="mb-5">
           Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros rellenando el siguiente formulario:
         </p>
 
@@ -37,7 +37,27 @@
           <label for="message">Mensaje</label>
         </div>
 
-        <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+        <div class="color-picker mb-4 mt-4">
+          <label class="color-picker__label">Eres humano? Selecciona el color azul para confirmar</label>
+          <div class="color-picker__options">
+            <input type="radio" id="color-red" name="captcha">
+            <label for="color-red" class="color-picker__color color-picker__color--red" title="Rojo"></label>
+
+            <input type="radio" id="color-blue" name="captcha">
+            <label for="color-blue" class="color-picker__color color-picker__color--blue" title="Azul"></label>
+
+            <input type="radio" id="color-green" name="captcha">
+            <label for="color-green" class="color-picker__color color-picker__color--green" title="Verde"></label>
+
+            <input type="radio" id="color-yellow" name="captcha">
+            <label for="color-yellow" class="color-picker__color color-picker__color--yellow" title="Amarillo"></label>
+
+            <input type="radio" id="color-purple" name="captcha">
+            <label for="color-purple" class="color-picker__color color-picker__color--purple" title="Morado"></label>
+          </div>
+        </div>
+
+        <button type="submit" class="contact__submit btn btn-primary mt-3">Enviar</button>
       </form>
 
     </main>
