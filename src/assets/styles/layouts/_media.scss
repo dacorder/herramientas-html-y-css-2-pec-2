@@ -79,6 +79,11 @@
       margin-bottom: 2.5rem;
     }
 
+    &__location {
+      display: flex;
+      flex-direction: column;
+    }
+
     &__lead {
       font-size: 1.25rem;
       font-weight: 500;
@@ -118,6 +123,10 @@
   }
 
   .media-post__content {
+    flex-direction: row;
+  }
+
+  .media-post__location {
     flex-direction: row;
   }
 }
