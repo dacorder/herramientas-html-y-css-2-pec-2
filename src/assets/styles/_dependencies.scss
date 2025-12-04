@@ -8,4 +8,8 @@
 
 // Import 3rd party dependencies
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
-@import "bootstrap/scss/bootstrap";
+
+// Import Bootstrap styles on a separate layer
+@layer bootstrap {
+    @import "bootstrap/scss/bootstrap";
+}
