@@ -12,10 +12,10 @@ $color-background: #FFFAFF;
 $color-background-contrast: #050401;
 
 $color-primary: #303036;
-$color-primary-contrast: #f0f0f0;
+$color-primary-contrast: #F0F0F0;
 
-$color-secondary: #30BCED;
-$color-secondary-contrast: #ffffff;
+$color-secondary: #CECECE;
+$color-secondary-contrast: #FFFFFF;
 
 $color-success: #28a745;
 $color-danger: #FC5130;
@@ -34,6 +34,11 @@ $theme-colors: (
   "info": $color-info,
   "dark": $color-primary,
 );
+
+// Bootstrap Alert colors
+$info-bg-subtle: $color-primary-contrast;
+$info-border-subtle: $color-secondary;
+$info-text-emphasis: $color-primary;
 
 // Bootstrap Navbar colors
 $navbar-dark-color: $color-primary-contrast;
