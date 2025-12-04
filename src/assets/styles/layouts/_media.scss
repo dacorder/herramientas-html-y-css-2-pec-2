@@ -62,7 +62,6 @@
       margin-bottom: 0.5rem;
     }
 
-
     &__body {
       max-width: 900px;
       margin: 0 auto;
@@ -75,11 +74,25 @@
       align-items: center;
       gap: 1rem;
     }
+
+    &__lead {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: variables.$color-primary;
+      line-height: 1.6;
+      margin: 0;
+      text-align: start;
+      padding: 15px 0 0 0;
+    }
+
+    &__intro {
+      padding: 0;
+    }
   }
 }
 
 @include mixins.respond-desktop {
-  
+
   .media-post__hero {
     aspect-ratio: 9/3;
   }
@@ -94,6 +107,10 @@
 
   .media-post__image {
     max-width: 400px;
+  }
+
+  .media-post__intro {
+      padding: 2rem 0;
   }
 
   .media-post__content {
