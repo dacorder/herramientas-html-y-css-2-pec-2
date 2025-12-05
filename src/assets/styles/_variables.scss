@@ -46,3 +46,19 @@ $navbar-dark-hover-color: white;
 $navbar-dark-active-color: white;
 $navbar-dark-brand-color: $color-primary-contrast;
 $navbar-dark-brand-hover-color: white;
+
+// Bootstrap navbar menu button
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  background-color: transparent;
+  padding: 0;
+
+  &:focus,
+  &:active,
+  &:hover {
+    box-shadow: none;
+    background: transparent;
+    background-color: transparent;
+  }
+}
