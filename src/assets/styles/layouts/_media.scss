@@ -78,6 +78,11 @@
     &__section {
       margin-top: 2rem;
       margin-bottom: 2.5rem;
+
+      &:has(.media-post__agenda-container) {
+        container-type: inline-size;
+        container-name: section-container;
+      }
     }
 
     &__section-title {
@@ -115,6 +120,10 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+
+      @container section-container (min-width: 700px) {
+        flex-direction: row;
+      }
     }
 
     &__agenda {
