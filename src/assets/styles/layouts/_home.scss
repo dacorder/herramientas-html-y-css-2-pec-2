@@ -91,11 +91,6 @@
                     margin: 0px auto;
                 }
 
-                .home__location-image {
-                    width: 30%;
-                    max-height: 100%;
-                }
-
                 .home__corner {
                     display: block;
                     grid-row: 1 / 2;
@@ -107,6 +102,8 @@
                     grid-row: 3 / 5;
                     background-color: variables.$color-primary;
                     color: variables.$color-primary-contrast;
+                    container-type: inline-size;
+                    container-name: location-container;
                 }
 
                 .home__location-body {
@@ -117,6 +114,15 @@
 
                 .home__location-message {
                     flex: 1;
+                }
+
+                .home__location-image {
+                    width: 30cqw;
+                    max-height: 100%;
+
+                    @container location-container (width > 768px) {
+                        width: 20cqw;
+                    }
                 }
 
                 .home__date {
