@@ -22,7 +22,21 @@ $color-danger: #FC5130;
 $color-warning: #FFC107;
 $color-info: #17a2b8;
 
-$color-acent-p3: color(display-p3 0.188 0.188 0.212);
+// Captcha colors (RGB)
+$captcha-red-rgb: rgb(230, 56, 54);
+$captcha-blue-rgb: rgb(31, 135, 230);
+$captcha-green-rgb: rgb(66, 161, 71);
+$captcha-yellow-rgb: rgb(252, 217, 54);
+$captcha-purple-rgb: rgb(143, 36, 171);
+$captcha-orange-rgb: rgb(242, 140, 38);
+
+// Captcha colors (display-p3)
+$captcha-red: color(display-p3 0.9 0.22 0.21);
+$captcha-blue: color(display-p3 0.12 0.53 0.9);
+$captcha-green: color(display-p3 0.26 0.63 0.28);
+$captcha-yellow: color(display-p3 0.99 0.85 0.21);
+$captcha-purple: color(display-p3 0.56 0.14 0.67);
+$captcha-orange: color(display-p3 0.95 0.55 0.15);
 
 // Bootstrap theme colors
 $theme-colors: (
