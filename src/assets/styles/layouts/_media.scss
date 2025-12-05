@@ -111,7 +111,15 @@
       align-items: center;
     }
 
+    &__agenda-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
     &__agenda {
+      flex: 1;
+
       .list-group-item {
         display: flex;
         flex-direction: row;
