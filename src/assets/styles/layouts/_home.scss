@@ -12,6 +12,10 @@
         display: flex;
         flex-direction: column;
 
+        :is(.home__image, .home__location-image, .home__description) {
+            max-width: 800px;
+        }
+
         .home__title {
             padding: 20px 10px;
             margin: 0;
@@ -72,6 +76,10 @@
                     2fr minmax(10em, max-content) minmax(14em, max-content) minmax(1em, 1fr)
                     fit-content(30em) fit-content(28em) calc(3em + 0.5vw);
                 grid-template-rows: 35vh 40vh 15vh fit-content(200px);
+
+                :is(.home__image, .home__location-image, .home__description) {
+                    max-width: 100%;
+                }
 
                 :is(.home__title, .home__location, .home__description) {
                     margin: 30px 40px;
