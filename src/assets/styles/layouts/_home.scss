@@ -31,7 +31,7 @@
             padding: 20px 10;
         }
 
-        .home__location_title {
+        .home__location-message {
             line-height: 1.3rem;
         }
 
@@ -54,11 +54,6 @@
             p {
                 margin: 0;
             }
-        }
-
-        .home_about {
-            line-height: 1.3;
-            margin-bottom: 1em;
         }
 
         .home__description {
@@ -114,13 +109,13 @@
                     color: variables.$color-primary-contrast;
                 }
 
-                .home__location_body {
+                .home__location-body {
                     display: flex;
                     align-items: center;
                     gap: 20px;
                 }
 
-                .home__location_title {
+                .home__location-message {
                     flex: 1;
                 }
 
