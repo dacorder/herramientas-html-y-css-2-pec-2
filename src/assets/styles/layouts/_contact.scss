@@ -39,6 +39,8 @@
 
   .color-picker {
     text-align: center;
+    container-type: inline-size;
+    container-name: color-picker;
 
     &__label {
       display: block;
@@ -77,6 +79,10 @@
       &--purple {
         background-color: color(display-p3 0.56 0.14 0.67);
       }
+
+      &--orange {
+        background-color: color(display-p3 0.95 0.55 0.15);
+      }
     }
 
     &__options {
@@ -91,6 +97,14 @@
           transform: scale(1.1);
           box-shadow: 0 0 0 3px variables.$color-primary;
         }
+      }
+    }
+
+    @container color-picker (max-width: 350px) {
+      &__options {
+        flex-wrap: wrap;
+        max-width: calc(3 * 36px + 2 * 0.75rem);
+        margin: 0 auto;
       }
     }
   }
