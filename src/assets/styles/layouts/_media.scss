@@ -110,6 +110,24 @@
       flex-direction: column;
       align-items: center;
     }
+
+    &__agenda {
+      .list-group-item {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+      }
+    }
+
+    &__agenda-day {
+      font-weight: 700;
+      min-width: 50px;
+      color: variables.$color-primary;
+    }
+
+    &__agenda-program {
+      flex: 1;
+    }
   }
 
   footer:has(a[href^="mailto:"]) {
