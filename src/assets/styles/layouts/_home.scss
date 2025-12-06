@@ -75,7 +75,7 @@
                 grid-template-columns:
                     2fr minmax(10em, max-content) minmax(14em, max-content) minmax(1em, 1fr)
                     fit-content(30em) fit-content(28em) calc(3em + 0.5vw);
-                grid-template-rows: 35vh 40vh 15vh fit-content(200px);
+                grid-template-rows: 25vh 35vh 15vh fit-content(200px);
 
                 :is(.home__image, .home__location-image, .home__description) {
                     max-width: 100%;
