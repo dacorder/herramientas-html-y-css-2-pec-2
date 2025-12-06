@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>UOC Boilerplate</title>
+  </head>
+  <body>
+    <include src="./views/header.html" locals='{
+      "page": "home"
+    }'></include>
+
+    <main class="main-container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <div class="card shadow text-center p-5">
+                
+              <div class="animate__animated animate__bounceIn">
+                <i class="contact__icon fa-solid fa-envelope"></i>
+              </div>
+
+              <h1 class="animate__animated animate__fadeInDown animate__delay-1s mb-3">
+                ¡Gracias!
+              </h1>
+
+              <p class="animate__animated animate__fadeInUp animate__delay-2s text-muted mb-4">
+                Tu mensaje ha sido enviado correctamente.<br>
+                Nos pondremos en contacto contigo pronto.
+              </p>
+
+              <a href="index.html" class="btn btn-primary animate__animated animate__pulse animate__delay-3s">
+                Volver al inicio
+              </a>
+            </div>
+          </div>
+        </div>
+    </main>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>
