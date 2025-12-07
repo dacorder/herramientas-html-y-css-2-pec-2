@@ -18,6 +18,23 @@
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
             border-color: #999;
         }
+
+        &__image {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        &__name {
+            font-size: 1.5em;
+            margin: 12px 0 8px 0;
+        }
+
+        &__description {
+            font-size: 1em;
+            color: #666;
+        }
     }
 
     @container speaker-list-container (width > 768px) {
@@ -30,22 +47,5 @@
         .card-speaker {
             width: calc(33.33cqw - 16px);
         }
-    }
-
-    .card-speaker__image {
-        width: 100%;
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
-        object-position: center top;
-    }
-
-    .card-speaker__name {
-        font-size: 1.5em;
-        margin: 12px 0 8px 0;
-    }
-
-    .card-speaker__description {
-        font-size: 1em;
-        color: #666;
     }
 }
