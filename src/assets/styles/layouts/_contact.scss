@@ -3,7 +3,7 @@
 
 @layer layout {
   
-  form[name="contact"] {
+  .contact {
     max-width: 550px;
     margin: 30 auto;
     padding: 1.5rem;
@@ -12,15 +12,11 @@
     container-type: inline-size;
     container-name: contact-form;
 
-    .form-control {
+    &__control {
       border-radius: 6px;
     }
-
-    .btn-primary {
+    &__submit {
       padding: 0.6rem 1.5rem;
-    }
-
-    .contact__submit {
       opacity: 0.5;
       pointer-events: none;
       cursor: not-allowed;
@@ -32,12 +28,12 @@
       pointer-events: auto;
       cursor: pointer;
     }
-  }
 
-  .contact__icon {
-    color: variables.$color-info;
-    font-size: 3rem;
-    margin-bottom: 10px;
+    &__icon {
+      color: variables.$color-info;
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
   }
 
   .color-picker {
